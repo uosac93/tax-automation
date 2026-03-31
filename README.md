@@ -2,6 +2,41 @@
 
 세무사 박양훈이 세무 실무에서 반복되는 작업을 자동화하기 위해 직접 개발한 프로그램 모음입니다.
 
+## 실행 방법
+
+### 사전 준비
+- Python 3.10 이상 설치 ([python.org](https://www.python.org/downloads/))
+- Git 설치 후 레포 클론:
+```bash
+git clone https://github.com/uosac93/tax-automation.git
+cd tax-automation
+```
+
+### 각 프로그램 실행
+
+**1. 병의원 매출 자동 회계처리**
+```bash
+cd 1_medical-revenue
+pip install -r requirements.txt
+python main.py
+```
+
+**2. 법인세 신고서 자동 검토**
+```bash
+cd 2_corp-tax-review
+pip install -r requirements.txt
+python main.py
+```
+
+**3. 기준시가 계산기**
+```bash
+cd 3_standard-price-calculator
+pip install -r requirements.txt
+python app.pyw
+```
+> 기준시가 계산기는 공공데이터포털 API 키가 필요합니다.
+> `index.html`과 `building_land_registry.py`의 `YOUR_API_KEY` 부분을 본인의 API 키로 교체하세요.
+
 ## 프로그램 목록
 
 ### 1. 병의원 매출 자동 회계처리 (`1_medical-revenue`)
@@ -21,11 +56,10 @@
 
 ## 기술 스택
 - **언어**: Python 3, JavaScript, HTML/CSS
-- **라이브러리**: openpyxl, python-docx, PyInstaller, Tkinter
+- **라이브러리**: openpyxl, python-docx, PyInstaller, Tkinter, PyMuPDF, reportlab
 - **API**: 공공데이터포털, Claude API
-- **기타**: PyWebView
+- **기타**: PyWebView, customtkinter
 
 ## 개발자
 - 박양훈 (세무사)
 - uosac93@gmail.com
-

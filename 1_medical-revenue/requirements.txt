@@ -1,0 +1,4 @@
+PyMuPDF
+openpyxl
+xlwt
+windnd

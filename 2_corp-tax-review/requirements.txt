@@ -1,0 +1,6 @@
+PyMuPDF
+openpyxl
+python-docx
+reportlab
+customtkinter
+tkinterdnd2
